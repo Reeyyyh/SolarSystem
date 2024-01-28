@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+}
+
+.tocenter{
+    width: 100%;
+    height: 700px;
+    background-image: url(https://img.freepik.com/premium-photo/deep-beautiful-space-with-stars-galaxies-planets-amazing-space-background_338491-17548.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background-color: #F3B95F;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earthline{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    outline: aliceblue solid 1px;
+    animation: Rotate 30s infinite linear 0s;
+}
+
+.earth{
+    position: absolute;
+    background-color: rgb(13, 227, 227);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.moonline{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    outline: aliceblue solid 1px;
+    border-radius: 50%;
+    top: -50%;
+    left: -50%;
+    animation: Rotate 10s infinite linear 0s;
+}
+
+.moon{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+@keyframes Rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
