@@ -1,19 +1,19 @@
 body{
     margin: 0;
-}
-
-.tocenter{
-    width: 100%;
-    height: 700px;
     background-image: url(https://img.freepik.com/premium-photo/deep-beautiful-space-with-stars-galaxies-planets-amazing-space-background_338491-17548.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/* Sun */
 .sun{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: #F3B95F;
     border-radius: 50%;
     position: relative;
@@ -22,31 +22,70 @@ body{
     align-items: center;
 }
 
-.earthline{
+/* mercury */
+
+.mercuryline{
     position: absolute;
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    outline: aliceblue solid 1px;
+    /* outline: rgb(241, 51, 13) solid 1px; */
+    animation: Rotate 10s infinite linear 0s;
+}
+
+.mercury{
+    position: absolute;
+    background-color: rgb(128, 135, 145);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* venus */
+
+.venusline{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    /* outline: rgb(241, 241, 13) solid 1px; */
+    animation: Rotate 20s infinite linear 0s;
+}
+
+.venus{
+    position: absolute;
+    background-color: rgb(214, 236, 88);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* earth */
+.earthline{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    /* outline: aliceblue solid 1px; */
     animation: Rotate 30s infinite linear 0s;
 }
 
 .earth{
     position: absolute;
     background-color: rgb(13, 227, 227);
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
 }
 
 .moonline{
     position: absolute;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
     outline: aliceblue solid 1px;
     border-radius: 50%;
-    top: -50%;
-    left: -50%;
+    top: -42%;
+    left: -41%;
     animation: Rotate 10s infinite linear 0s;
 }
 
@@ -55,6 +94,27 @@ body{
     background-color: rgb(255, 255, 255);
     width: 15px;
     height: 15px;
+    border-radius: 50%;
+}
+
+/* mars */
+
+.marsline{
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    /* outline: rgb(25, 227, 25) solid 1px; */
+    animation: Rotate 40s infinite linear 0s;
+}
+
+.mars{
+    position: absolute;
+    background-color: rgb(213, 67, 14);
+    width: 45px;
+    height: 45px;
+    top: 5%;
+    left: 5%;
     border-radius: 50%;
 }
 
